@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    // TSはECMAScript 5に変換
+    "target": "es5",
+    // TSのモジュールはES Modulesとして出力
+    // NOTE: これを指定しないと、TypeScriptコードのimport文とexport文がコンパイラによってCommonJSとして変換されるため、webpackによるTree Shaking（未使用のimportを静的解析によって振り落とす機能）のメリットが得られません。
+    "module": "es2015"
+  }
+}
