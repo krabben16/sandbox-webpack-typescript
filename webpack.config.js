@@ -3,8 +3,17 @@ module.exports = {
   // development: ソースマップを有効にしてJSファイルを出力する
   mode: "development",
 
-  // 出力するJSのファイルのパス
-  entry: "./src/main.ts",
+  // エントリーポイント
+  entry: {
+    main: "./src/main.ts",
+    test: "./src/test.ts"
+  },
+
+  // 出力先
+  output: {
+    filename: "[name].js",
+    path: __dirname + "/dist"
+  },
 
   module: {
     rules: [
@@ -14,6 +23,7 @@ module.exports = {
       }
     ]
   },
+
   // import文で.tsファイルを解決するために設定する
   resolve: {
     extensions: [

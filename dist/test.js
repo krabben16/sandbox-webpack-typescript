@@ -81,22 +81,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/test.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./src/main.ts":
-/*!*********************!*\
-  !*** ./src/main.ts ***!
-  \*********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n\r\nvar message = \"Hello World\";\r\nObject(_sub__WEBPACK_IMPORTED_MODULE_0__[\"setBodyInnerHtml\"])(message);\r\n\n\n//# sourceURL=webpack:///./src/main.ts?");
-
-/***/ }),
 
 /***/ "./src/sub.ts":
 /*!********************!*\
@@ -107,6 +95,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"setBodyInnerHtml\", function() { return setBodyInnerHtml; });\nvar setBodyInnerHtml = function (message) {\r\n    document.body.innerHTML = \"\" + message;\r\n    log(message);\r\n};\r\nvar log = function (message) {\r\n    console.log(message + \"\\u3092\\u51FA\\u529B\\u3057\\u307E\\u3057\\u305F\");\r\n};\r\n\n\n//# sourceURL=webpack:///./src/sub.ts?");
+
+/***/ }),
+
+/***/ "./src/test.ts":
+/*!*********************!*\
+  !*** ./src/test.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n\r\nvar message = \"Test\";\r\nObject(_sub__WEBPACK_IMPORTED_MODULE_0__[\"setBodyInnerHtml\"])(message);\r\n\n\n//# sourceURL=webpack:///./src/test.ts?");
 
 /***/ })
 

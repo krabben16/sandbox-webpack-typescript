@@ -1,4 +1,4 @@
 import { setBodyInnerHtml } from "./sub";
 
-const message: string = "Hello World";
+const message: string = "Test";
 setBodyInnerHtml(message);
