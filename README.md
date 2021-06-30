@@ -1,5 +1,3 @@
-# test-webpack-typescript
-
 ## セットアップ
 
 ```sh
